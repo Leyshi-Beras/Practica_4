@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servicios web</title>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src = "JS/JavaScript.js"></script>
+    </head>
+    <body>
+        <h1>SERVICIOS WEB</h1>
+        <br>
+        <table div class="tabla-agregar" id="tabla">
+            <caption>Agregar datos</caption>
+            <tr>
+                <th id="titulo">Nombre</th>
+                <th id="titulo">Apellido</th>
+                <th id="titulo">Teléfono</th>
+            </tr>
+            <tr>
+                <th><input type="textfield" id="nombre"></th>
+                <th><input type="textfield" id="apellido"></th>
+                <th><input type="textfield" id="telefono" ></th> 
+                <th><button onclick="nuevoContacto()">Guardar</button></th>
+            </tr>
+        </table>
+        <br>
+        <table div class="tabla-obtener" id="tabla">
+            <caption>Obtener datos</caption>
+            <tr>
+                <th id="titulo">Nombre</th>
+                <th id="titulo">Apellido</th>
+                <th id="titulo">Teléfono</th>
+            </tr>
+            <tr>
+                <th><input type="textfield" DOMContentLoaded="cargarContactos()" id="caja-nombre" readonly></th>
+                <th><input type="textfield" DOMContentLoaded="cargarContactos()" id="caja-apellido" readonly></th>
+                <th><input type="textfield" DOMContentLoaded="cargarContactos()" id="caja-telefono" readonly></th>
+                <th><button onclick="contactos()">Vizualizar</button></th>
+            </tr>
+        </table>
+    </body>
+</html>
